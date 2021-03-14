@@ -8,7 +8,7 @@ Chef-Steph is an Airtable and React build that stores recipes created by Stephan
 
 ## Wireframes
 
-![Imgur](https://i.imgur.com/y0Kqe4I.png)
+![Imgur](https://i.imgur.com/hVIACEy.png)
 ![Imgur](https://i.imgur.com/mkQd7Wk.png)
 
 
