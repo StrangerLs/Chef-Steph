@@ -17,7 +17,19 @@ Chef-Steph is an Airtable and React build that stores recipes created by Stephan
 
 
 ## API and Data Sample
-
+``` .json 
+{
+    "records": [
+        {
+            "id": "rec2Mbuq1z3B54BbF",
+            "fields": {
+                "title": "turkey sandwhich",
+                "ingredients": "turkeys",
+                "steps": "hahaha"
+            },
+            "createdTime": "2021-03-11T01:46:17.000Z"
+        },
+```
 
 
 Airtable is returning the data for this base as follows:
