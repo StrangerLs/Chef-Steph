@@ -17,7 +17,7 @@ Chef-Steph is an Airtable and React build that stores recipes created by Stephan
 
 ## Component Hierarchy
 
-
+Airtable is returning the data for this base as follows:
 
 ## API and Data Sample
 ``` .json 
@@ -35,29 +35,32 @@ Chef-Steph is an Airtable and React build that stores recipes created by Stephan
 ```
 
 
-Airtable is returning the data for this base as follows:
+
 
 
 
 ### MVP/PostMVP
 
 #### MVP
+- Recieve data from airtable
+- Homepage with clickable links to recipes/recipe cards with descriptions
+- Link to form for new recipe submittal
 
-- 
 #### PostMVP
 
-- 
+- kitchen setup page 
+- Bio page
 
 ## Project Schedule
 
 | Day      | Deliverable                                | Status   |
 | -------- | ------------------------------------------ | -------- |
-| Oct 9-11 | Proposal Approval / Airtable Setup         | na |
-| Oct 12   | Component Creation / Get, Set, Delete Data | na |
-| Oct 13   | Oct. 12 cont'd / CSS Components            | na |
-| Oct 14   | CSS Components cont'd / MVP                | na |
-| Oct 15   | Advanced CSS                               | na |
-| Oct 16   | Presentations                              | na |
+| March 15 | Proposal Approval / Airtable Setup         | na |
+| march 16 | Component Creation / Get Data/ Post data   | na |
+| march 17 | Functionality.                             | na |
+| march 18 | MVP.                                       | na |
+| march 19 | CSS                                        | na |
+| march 22  | Presentations                             | na |
 
 ## Timeframes
 
