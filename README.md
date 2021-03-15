@@ -27,12 +27,12 @@ Airtable is returning the data for this base as follows:
         {
             "id": "recImLTUQM9jtpbHk",
             "fields": {
-                "typeOfFood": "bigPlates",
-                "itemName": "Chicken Juice",
-                "description": "A chicken with some juice",
-                "ingredients": "1 chicken, 2 juice",
-                "directions": "put chicken in the juice and stir.",
-                "cookTime": "9 years"
+                "typesOfDishes": "smallPlates",
+                "itemName": "edamame",
+                "description": "green little boops",
+                "ingredients": "nature",
+                "instructions": "steamy steam",
+                "cookTime": "10 seconds"
             },
             "createdTime": "2021-03-15T14:03:24.000Z"
         },
