@@ -67,25 +67,18 @@ Airtable is returning the data for this base as follows:
 
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal                  |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Airtable setup            |    H     |     .5hrs      |      1hr      |     1hr     |
-| Clickable icons           |    H     |      1hrs      |      1hr      |     1hr     |
-| Data population pg 1      |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Data population pg 2      |    H     |      3hrs      |     2hrs      |    2hrs     |
-| Data population pg 3      |    H     |      3hrs      |     2hrs      |    2hrs     |
-| Form creation pg 1        |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Form creation pg 2        |    H     |      2hrs      |     1 hr      |    1 hr     |
-| Form creation pg 3        |    H     |      2hrs      |     1 hr      |     1hr     |
-| Data creation/update pg 1 |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Data creation/update pg 2 |    H     |      3hrs      |      1hr      |     1hr     |
-| Data creation/update pg 3 |    H     |      3hrs      |      1hr      |     1hr     |
-| Data deletion pg 1        |    H     |      2hrs      |      1hr      |     1hr     |
-| Data deletion pg 2        |    H     |      2hrs      |      1hr      |     1hr     |
-| Data deletion pg 3        |    H     |      2hrs      |      1hr      |     1hr     |
-| Component CSS pg 1        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Component CSS pg 2        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Component CSS pg 3        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Total                     |    H     |    42.5hrs     |     35hrs     |    35hrs    |
+| Proposal                       |    H     |      .30hrs    |     na      |    na     |
+| Airtable info input            |    H     |     .5hrs      |     na      |    na     |
+| Get and post requests          |    H     |      3hrs      |     na      |    na     |
+| Homepage carousel              |    H     |      4hrs      |     na      |    na     |
+| Creation of card/Nav           |    H     |      7hrs      |     na      |    na     |
+| Card page/populate             |    H     |      8hrs      |     na      |    na     |
+| Homepage CSS                   |    H     |      5hrs      |     na      |    na     |
+| card page CSS                  |    H     |      3hrs      |     na      |    na     |
+| recipe page CSS                |    H     |      3hrs      |     na      |    na     |
+| form CSS                       |    H     |      3hrs      |     na      |    na     |
+| Nav CSS                        |    H     |      3hrs      |     na      |    na     |
+| Total                          |    H     |    42.5hrs     |     na      |    na     |
 
 
 
