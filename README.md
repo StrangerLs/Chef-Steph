@@ -25,13 +25,16 @@ Airtable is returning the data for this base as follows:
 {
     "records": [
         {
-            "id": "rec2Mbuq1z3B54BbF",
+            "id": "recImLTUQM9jtpbHk",
             "fields": {
-                "title": "turkey sandwhich",
-                "ingredients": "turkeys",
-                "steps": "hahaha"
+                "typeOfFood": "bigPlates",
+                "itemName": "Chicken Juice",
+                "description": "A chicken with some juice",
+                "ingredients": "1 chicken, 2 juice",
+                "directions": "put chicken in the juice and stir.",
+                "cookTime": "9 years"
             },
-            "createdTime": "2021-03-11T01:46:17.000Z"
+            "createdTime": "2021-03-15T14:03:24.000Z"
         },
 ```
 
