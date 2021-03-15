@@ -67,7 +67,7 @@ Airtable is returning the data for this base as follows:
 
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal                       |    H     |      .30hrs    |     na      |    na     |
+| Proposal                       |    H     |     .5hrs      |     na      |    na     |
 | Airtable info input            |    H     |     .5hrs      |     na      |    na     |
 | Get and post requests          |    H     |      3hrs      |     na      |    na     |
 | Homepage carousel              |    H     |      4hrs      |     na      |    na     |
@@ -78,7 +78,7 @@ Airtable is returning the data for this base as follows:
 | recipe page CSS                |    H     |      3hrs      |     na      |    na     |
 | form CSS                       |    H     |      3hrs      |     na      |    na     |
 | Nav CSS                        |    H     |      3hrs      |     na      |    na     |
-| Total                          |    H     |    42.5hrs     |     na      |    na     |
+| Total                          |    H     |     40hrs      |     na      |    na     |
 
 
 
