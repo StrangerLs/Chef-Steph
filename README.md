@@ -4,7 +4,7 @@
 
 ## Project Description
 
-Chef-Steph is an Airtable and React build that stores recipes created by Stephanie Page. This app is able to display recipe information as well as upload new reciples via different pathways. There will be functionality for users to post comments on recipes and share, as well as rate recipes.
+Roots-&-Rosemary is an Airtable and React build that stores recipes created by Stephanie Page. This app is able to display recipe information as well as upload new reciples via different pathways. There will be functionality for users to post comments on recipes and share, as well as rate recipes.
 
 ## Wireframes
 
