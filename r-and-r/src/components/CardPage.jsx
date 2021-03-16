@@ -6,7 +6,6 @@ export default function CardPage(props) {
   const { recipes } = props;
   return (
     <div>
-      <Navbar/>
       {recipes.map((recipe) => (
         <Card recipe={recipe} key={recipe.id}/>
       ))}

@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Navbar from "./Navbar";
+
 import Card from "./Card";
 
 
@@ -17,7 +17,6 @@ export default function RecipePage(props) {
   const {instructions} = specRecipe.fields
   return (
     <div>
-      <Navbar/>
       <Card recipe={specRecipe} />
       <p>Instructions: <br/>{instructions}</p>
     </div>

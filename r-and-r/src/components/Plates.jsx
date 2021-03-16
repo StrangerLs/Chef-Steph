@@ -1,6 +1,5 @@
 
 import Card from "./Card"
-import Navbar from "./Navbar"
 import { useParams } from "react-router-dom";
 
 
