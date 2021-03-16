@@ -13,7 +13,7 @@ export default function RecipePage(props) {
   if (!specRecipe) {
     return <></>
   }
-  console.log(specRecipe.fields.instructions);
+  
   const {instructions} = specRecipe.fields
   return (
     <div>

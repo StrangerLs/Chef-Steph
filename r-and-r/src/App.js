@@ -5,6 +5,7 @@ import { Route } from "react-router-dom";
 import { baseURL, config } from "./services/index";
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar"
+import Form from "./components/Form";
 import './App.css';
 import RecipePage from "./components/RecipePage";
 
@@ -34,7 +35,11 @@ function App() {
     
         <Route exact path="/foods/:id">
           <RecipePage recipes={recipes}/>
-      </Route>
+        </Route>
+        <Route exact path="/form">
+          <Navbar/>
+          <Form/>
+        </Route>
     </div>
     </div>
   );

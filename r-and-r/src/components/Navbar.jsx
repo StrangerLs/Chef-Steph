@@ -60,10 +60,15 @@ export default function Navbar(props) {
         <Icon clicked={click}>&nbsp;</Icon>
       </MenuLabel>
       <Link to="/recipes">
-        <p>All Recipes</p>
+        All Recipes
       </Link>
+      <br/>
       <Link to="/">
         Home
+      </Link>
+      <br/>
+      <Link to="/form">
+        New Recipe
       </Link>
     </div>
   )
