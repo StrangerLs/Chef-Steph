@@ -48,7 +48,7 @@ transition: all 0.3s;
 `;
 
 
-export default function Navbar() {
+export default function Navbar(props) {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
@@ -59,6 +59,12 @@ export default function Navbar() {
       <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
         <Icon clicked={click}>&nbsp;</Icon>
       </MenuLabel>
+      <Link to="/recipes">
+        <p>All Recipes</p>
+      </Link>
+      <Link to="/">
+        Home
+      </Link>
     </div>
   )
 }
