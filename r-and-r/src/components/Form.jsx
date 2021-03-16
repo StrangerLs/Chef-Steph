@@ -26,6 +26,7 @@ export default function Form() {
   }
   return (
     <div>
+      <h1>Add your own recipe here!</h1>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Name" value={itemName} onChange={(e) => setItemName(e.target.value)} />
         <br/>
@@ -37,8 +38,8 @@ export default function Form() {
         <br/>
         <input type="text" placeholder="Cook Time" value={cookTime} onChange={(e) => setCookTime(e.target.value)} />
         <br/>
-        <select required placeholder="Dish Type" value={typesOfDishes} onChange={(e) => setTypesOfDishes(e.target.value)}>
-          <option disabled selected></option>
+        <select required value={typesOfDishes} onChange={(e) => setTypesOfDishes(e.target.value)}>
+          <option disabled defaultValue></option>
           <option>beverages</option>
           <option>bigPlate</option>
           <option>smallPlates</option>

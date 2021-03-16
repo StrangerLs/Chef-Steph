@@ -4,7 +4,6 @@ import Navbar from "./Navbar"
 
 export default function CardPage(props) {
   const { recipes } = props;
-  console.log(props);
   return (
     <div>
       <Navbar/>

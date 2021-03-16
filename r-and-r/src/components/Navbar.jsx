@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const MenuLabel = styled.label`
-  background-color: #B6EDC8;
+  
+  background-color: ${(props) => (props.clicked ? "#b6edc8" : "#d6fde8")};
+  transition: all 0.3s;
   position: fixed;
   top: 6rem;
   right: 6rem;
@@ -17,41 +19,38 @@ const MenuLabel = styled.label`
   text-align: center;
 `;
 
-
 const Icon = styled.span`
-position: relative;
-background-color: ${(props) => (props.clicked ? "transparent" : "black")};
-width: 3rem;
-height: 2px;
-display: inline-block;
-margin-top: 3.5rem;
-transition: all 0.3s;
-&::before,
-&::after {
-  content: "";
-  background-color: black;
+  position: relative;
+  background-color: ${(props) => (props.clicked ? "transparent" : "black")};
   width: 3rem;
   height: 2px;
   display: inline-block;
-  position: absolute;
-  left: 0;
+  margin-top: 3.5rem;
   transition: all 0.3s;
-}
-&::before {
-  top: ${(props) => (props.clicked ? "0" : "-0.8rem")};
-  transform: ${(props) => (props.clicked ? "rotate(135deg)" : "rotate(0)")};
-}
-&::after {
-  top: ${(props) => (props.clicked ? "0" : "0.8rem")};
-  transform: ${(props) => (props.clicked ? "rotate(-135deg)" : "rotate(0)")};
-}
+  &::before,
+  &::after {
+    content: "";
+    background-color: black;
+    width: 3rem;
+    height: 2px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s;
+  }
+  &::before {
+    top: ${(props) => (props.clicked ? "0" : "-0.8rem")};
+    transform: ${(props) => (props.clicked ? "rotate(135deg)" : "rotate(0)")};
+  }
+  &::after {
+    top: ${(props) => (props.clicked ? "0" : "0.8rem")};
+    transform: ${(props) => (props.clicked ? "rotate(-135deg)" : "rotate(0)")};
+  }
 `;
-
 
 export default function Navbar(props) {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-
 
   return (
     <div>
@@ -59,18 +58,17 @@ export default function Navbar(props) {
       <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
         <Icon clicked={click}>&nbsp;</Icon>
       </MenuLabel>
-      <Link to="/recipes">
-        All Recipes
-      </Link>
+      <Link to="/">Home</Link>
+      <br />
+      <Link to="/recipes">All Recipes</Link>
       <br/>
-      <Link to="/">
-        Home
-      </Link>
+      <Link to="/foods/bigPlate">Big Plates</Link>
+      <br />
+      <Link to="/foods/smallPlates">Small Plates</Link>
+      <br />
+      <Link to="/foods/beverages">Beverages</Link>
       <br/>
-      <Link to="/form">
-        New Recipe
-      </Link>
+      <Link to="/form">New Recipe</Link>
     </div>
-  )
+  );
 }
-

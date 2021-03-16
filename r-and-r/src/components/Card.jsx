@@ -12,7 +12,7 @@ export default function Card(props) {
   return (
     <div>
       
-      <Link to={`/foods/${props.recipe.id}`}>
+      <Link to={`/recipe/${props.recipe.id}`}>
         <h2>{props.recipe.fields.itemName}</h2>
       </Link>
       <h3>Ingredients: <br/>{props.recipe.fields.ingredients}</h3>

@@ -1,6 +1,7 @@
 import axios from "axios";
 import CardPage from "./components/CardPage";
 import RandomCard from "./components/RandomCard"
+import Plates from "./components/Plates"
 import { Route } from "react-router-dom";
 import { baseURL, config } from "./services/index";
 import { useState, useEffect } from "react";
@@ -22,8 +23,8 @@ function App() {
   }, [])
   return (
     <div>
-      <Route exact path="/">
         <Navbar />
+      <Route exact path="/">
         <h2>Not sure what to cook? pick a random recipe below!</h2>
       <RandomCard recipes={recipes}/>
       </Route>
@@ -33,12 +34,15 @@ function App() {
       
     <div className="App">
     
-        <Route exact path="/foods/:id">
+        <Route exact path="/recipe/:id">
           <RecipePage recipes={recipes}/>
         </Route>
         <Route exact path="/form">
-          <Navbar/>
+       
           <Form/>
+        </Route>
+        <Route exact path="/foods/:type">
+          <Plates recipes={recipes}/>
         </Route>
     </div>
     </div>
