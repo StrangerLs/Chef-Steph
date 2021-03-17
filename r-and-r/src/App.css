@@ -10,7 +10,6 @@
 .hidden {
   position: relative;
   text-align: center;
-  padding-right: 80px;
   padding-top: 100px;
   visibility: hidden;
 }
@@ -18,7 +17,6 @@
 .visible {
   position: relative;
   text-align: center;
-  padding-right: 80px;
   padding-top: 100px;
 }
 
@@ -32,7 +30,10 @@
 
 }
 
-
+#head {
+  display: flex;
+  align-items: left;
+}
 
 .rand-card {
   display: flex;
@@ -96,4 +97,17 @@
 #cook-time {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .ind-card {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  #head {
+    display: flex;
+    justify-content: center;
+  }
 }

@@ -16,6 +16,10 @@ const MenuLabel = styled.label`
   z-index: 1000;
   box-shadow: 0 1rem 3rem rgba(182, 237, 200, 0.3);
   text-align: center;
+  @media (max-width: 480px){
+    top: 3rem;
+    right: 8rem;
+  }
 `;
 
 const Icon = styled.span`
@@ -56,7 +60,11 @@ export default function Navbar(props) {
       <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
         <Icon clicked={click}>&nbsp;</Icon>
       </MenuLabel>
-        <h1 id="RR">Roots & Rosemary</h1>
+      <div id="head">
+
+      <h1 id="RR">Roots & Rosemary</h1>
+      </div>
+      
       <div className={click ? "visible" : "hidden"}>
       
         <Link to="/">Home</Link>
@@ -72,6 +80,7 @@ export default function Navbar(props) {
         <Link to="/form">New Recipe</Link>
         
       </div>
+      
     </div>
   );
 }
