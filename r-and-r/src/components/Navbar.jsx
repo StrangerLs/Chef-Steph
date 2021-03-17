@@ -16,7 +16,7 @@ const MenuLabel = styled.label`
   z-index: 1000;
   box-shadow: 0 1rem 3rem rgba(182, 237, 200, 0.3);
   text-align: center;
-  @media (max-width: 480px){
+  @media (max-width: 480px) {
     top: 3rem;
     right: 8rem;
   }
@@ -54,19 +54,17 @@ const Icon = styled.span`
 export default function Navbar(props) {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  
+
   return (
     <div className="navbar">
       <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
         <Icon clicked={click}>&nbsp;</Icon>
       </MenuLabel>
       <div id="head">
-
-      <h1 id="RR">Roots & Rosemary</h1>
+        <h1 id="RR">Roots & Rosemary</h1>
       </div>
-      
+
       <div className={click ? "visible" : "hidden"}>
-      
         <Link to="/">Home</Link>
         &nbsp;
         <Link to="/recipes">All Recipes</Link>
@@ -78,9 +76,7 @@ export default function Navbar(props) {
         <Link to="/foods/beverages">Beverages</Link>
         &nbsp;
         <Link to="/form">New Recipe</Link>
-        
       </div>
-      
     </div>
   );
 }

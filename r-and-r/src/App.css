@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 #RR {
@@ -12,12 +13,14 @@
   text-align: center;
   padding-top: 100px;
   visibility: hidden;
+  text-decoration: none;
 }
 
 .visible {
   position: relative;
   text-align: center;
   padding-top: 100px;
+  text-decoration: none;
 }
 
 .navbar {
@@ -27,7 +30,6 @@
 .homepage{
   justify-content: center;
   text-align: center;
-
 }
 
 #head {
