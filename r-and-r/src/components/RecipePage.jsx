@@ -16,7 +16,7 @@ export default function RecipePage(props) {
   
   const {instructions} = specRecipe.fields
   return (
-    <div>
+    <div className="recipe">
       <Card recipe={specRecipe} />
       <p>Instructions: <br/>{instructions}</p>
     </div>

@@ -6,7 +6,7 @@ import { useState } from "react";
 const MenuLabel = styled.label`
   background-color: ${(props) => (props.clicked ? "#b6edc8" : "#d6fde8")};
   transition: all 0.3s;
-  position: fixed;
+  position: absolute;
   top: 2rem;
   right: 3rem;
   border-radius: 50%;
