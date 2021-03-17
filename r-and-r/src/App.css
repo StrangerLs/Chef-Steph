@@ -1,38 +1,109 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  border: green solid 2px;
+}
+#RR {
+  text-align: center;
+  margin-top: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Menu {
+  position: relative;
+  text-align: left;
+  padding-left: 30px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: orange;
+  
+}
+
+.homepage{
+  justify-content: center;
+  text-align: center;
+
+}
+
+/* .all-cards-body {
+  display: flex;
+  flex-flow: wrap row;
+} */
+
+.rand-card {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-flow: row wrap; 
+  justify-content: space-around;
+}
+
+.plates {
+  display: flex;
+  flex-flow: row wrap; 
+  justify-content: space-around;
+}
+
+.all-cards {
+  justify-content: center;
+  /* display: flex;
+  flex-flow: row wrap; */
+  /* align-items: center; */
+
+  /* background-color: rgb(250, 212, 116); */
+  /* display:grid;
+  grid-template-areas: 
+  "ti ti"
+  "in de"
+  "ct ct"; */
+  
+  /* margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px; */
+  
+}
+
+.ind-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(250, 212, 116);
+  border: gold 10px solid;
+  border-radius: 100px;
+  margin: 10px;
+  width: 45%;
 }
 
-.App-link {
-  color: #61dafb;
+#name {
+  /* grid-area: ti; */
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ing-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#ingredients {
+  /* grid-area: in; */
+  display: flex;
+  justify-content: center;
+}
+
+#description {
+  /* grid-area: de; */
+  display: flex;
+  justify-content: center;
+}
+#cook-time {
+  /* grid-area: ct; */
+  display: flex;
+  justify-content: center;
 }

@@ -1,14 +1,14 @@
-import React from 'react'
-import Card from "./Card"
-import Navbar from "./Navbar"
+import React from "react";
+import Card from "./Card";
+
 
 export default function CardPage(props) {
   const { recipes } = props;
   return (
-    <div>
+    <div className="card-container">
       {recipes.map((recipe) => (
-        <Card recipe={recipe} key={recipe.id}/>
+        <Card recipe={recipe} key={recipe.id} />
       ))}
     </div>
-  )
+  );
 }

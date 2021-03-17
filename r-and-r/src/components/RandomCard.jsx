@@ -10,7 +10,7 @@ export default function RandomCard(props) {
   
   return (
     
-    <div>
+    <div className="rand-card">
       <Card recipe={randomRecipe}/>
     </div>
     

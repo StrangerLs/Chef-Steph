@@ -22,7 +22,7 @@ function App() {
     getRecipes();
   }, [])
   return (
-    <div>
+    <div className="homepage">
         <Navbar />
       <Route exact path="/">
         <h2>Not sure what to cook? pick a random recipe below!</h2>

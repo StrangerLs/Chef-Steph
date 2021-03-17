@@ -4,12 +4,11 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const MenuLabel = styled.label`
-  
   background-color: ${(props) => (props.clicked ? "#b6edc8" : "#d6fde8")};
   transition: all 0.3s;
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 2rem;
+  right: 3rem;
   border-radius: 50%;
   height: 7rem;
   width: 7rem;
@@ -53,22 +52,24 @@ export default function Navbar(props) {
   const handleClick = () => setClick(!click);
 
   return (
-    <div>
-      <h1>Roots & Rosemary</h1>
+    <div className="navbar">
       <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
         <Icon clicked={click}>&nbsp;</Icon>
       </MenuLabel>
-      <Link to="/">Home</Link>
-      <br />
-      <Link to="/recipes">All Recipes</Link>
-      <br/>
-      <Link to="/foods/bigPlate">Big Plates</Link>
-      <br />
-      <Link to="/foods/smallPlates">Small Plates</Link>
-      <br />
-      <Link to="/foods/beverages">Beverages</Link>
-      <br/>
-      <Link to="/form">New Recipe</Link>
+      <div className="Menu">
+      <h1 id="RR">Roots & Rosemary</h1>
+        <Link to="/">Home</Link>
+        <br />
+        <Link to="/recipes">All Recipes</Link>
+        <br />
+        <Link to="/foods/bigPlate">Big Plates</Link>
+        <br />
+        <Link to="/foods/smallPlates">Small Plates</Link>
+        <br />
+        <Link to="/foods/beverages">Beverages</Link>
+        <br />
+        <Link to="/form">New Recipe</Link>
+      </div>
     </div>
   );
 }
