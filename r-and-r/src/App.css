@@ -74,11 +74,14 @@
   border-radius: 100px;
   margin: 10px;
   width: 45%;
+  
 }
 
 #name {
   display: flex;
   justify-content: center;
+  text-decoration: none;
+  color: black;
 }
 
 .ing-desc {
