@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
+// https://dev.to/codebucks/build-hamburger-menu-in-reactjs-using-styled-components-25ln
 const MenuLabel = styled.label`
   background-color: ${(props) => (props.clicked ? "#b6edc8" : "#d6fde8")};
   transition: all 0.3s;
@@ -50,25 +50,27 @@ const Icon = styled.span`
 export default function Navbar(props) {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-
+  
   return (
     <div className="navbar">
       <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
         <Icon clicked={click}>&nbsp;</Icon>
       </MenuLabel>
-      <div className="Menu">
-      <h1 id="RR">Roots & Rosemary</h1>
+        <h1 id="RR">Roots & Rosemary</h1>
+      <div className={click ? "visible" : "hidden"}>
+      
         <Link to="/">Home</Link>
-        <br />
+        &nbsp;
         <Link to="/recipes">All Recipes</Link>
-        <br />
+        &nbsp;
         <Link to="/foods/bigPlate">Big Plates</Link>
-        <br />
+        &nbsp;
         <Link to="/foods/smallPlates">Small Plates</Link>
-        <br />
+        &nbsp;
         <Link to="/foods/beverages">Beverages</Link>
-        <br />
+        &nbsp;
         <Link to="/form">New Recipe</Link>
+        
       </div>
     </div>
   );

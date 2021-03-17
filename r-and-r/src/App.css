@@ -1,24 +1,29 @@
 .App {
   text-align: center;
 }
-*{
-  border: green solid 2px;
-}
+
 #RR {
   text-align: center;
   margin-top: 0px;
 }
 
-.Menu {
+.hidden {
   position: relative;
-  text-align: left;
-  padding-left: 30px;
-  
+  text-align: center;
+  padding-right: 80px;
+  padding-top: 100px;
+  visibility: hidden;
+}
+
+.visible {
+  position: relative;
+  text-align: center;
+  padding-right: 80px;
+  padding-top: 100px;
 }
 
 .navbar {
   background-color: orange;
-  
 }
 
 .homepage{
@@ -27,10 +32,7 @@
 
 }
 
-/* .all-cards-body {
-  display: flex;
-  flex-flow: wrap row;
-} */
+
 
 .rand-card {
   display: flex;
@@ -58,21 +60,6 @@
 
 .all-cards {
   justify-content: center;
-  /* display: flex;
-  flex-flow: row wrap; */
-  /* align-items: center; */
-
-  /* background-color: rgb(250, 212, 116); */
-  /* display:grid;
-  grid-template-areas: 
-  "ti ti"
-  "in de"
-  "ct ct"; */
-  
-  /* margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px; */
-  
 }
 
 .ind-card {
@@ -87,7 +74,6 @@
 }
 
 #name {
-  /* grid-area: ti; */
   display: flex;
   justify-content: center;
 }
@@ -99,18 +85,15 @@
 }
 
 #ingredients {
-  /* grid-area: in; */
   display: flex;
   justify-content: center;
 }
 
 #description {
-  /* grid-area: de; */
   display: flex;
   justify-content: center;
 }
 #cook-time {
-  /* grid-area: ct; */
   display: flex;
   justify-content: center;
 }
