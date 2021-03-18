@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  
+  font-family: 'Shippori Mincho B1', serif;
 }
 
 #RR {
@@ -11,13 +11,16 @@
 #l1, #l2, #l3, #l4, #l5, #l6 {
   text-decoration: none;
   color: white;
-  background-color: orangered;
+  background-color: olivedrab;
   text-transform: uppercase;
-  border: olivedrab .5px solid;
+  border: white .5px solid;
+  border-radius: 50px;
+  padding: 0.5em 1em;
+  
 }
 
 #l1:hover, #l2:hover, #l3:hover, #l4:hover, #l5:hover, #l6:hover {
-  background-color: olivedrab;
+  background-color: rgb(235, 174, 121);
 }
 
 .hidden {
@@ -42,6 +45,7 @@
 .homepage{
   justify-content: center;
   text-align: center;
+  font-family: 'Shippori Mincho B1', serif;
 }
 
 #head {

@@ -61,7 +61,7 @@ export default function Navbar(props) {
         <Icon clicked={click}>&nbsp;</Icon>
       </MenuLabel>
       <div id="head">
-        <h1 id="RR">Roots & Rosemary</h1>
+        <h1 id="RR">ROOTS & ROSEMARY</h1>
       </div>
 
       <div className={click ? "visible" : "hidden"}>
