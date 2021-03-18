@@ -65,17 +65,17 @@ export default function Navbar(props) {
       </div>
 
       <div className={click ? "visible" : "hidden"}>
-        <Link to="/">Home</Link>
+        <Link id="l1" to="/">Home</Link>
         &nbsp;
-        <Link to="/recipes">All Recipes</Link>
+        <Link id="l2" to="/recipes">All Recipes</Link>
         &nbsp;
-        <Link to="/foods/bigPlate">Big Plates</Link>
+        <Link id="l3" to="/foods/bigPlate">Big Plates</Link>
         &nbsp;
-        <Link to="/foods/smallPlates">Small Plates</Link>
+        <Link id="l4" to="/foods/smallPlates">Small Plates</Link>
         &nbsp;
-        <Link to="/foods/beverages">Beverages</Link>
+        <Link id="l5" to="/foods/beverages">Beverages</Link>
         &nbsp;
-        <Link to="/form">New Recipe</Link>
+        <Link id="l6" to="/form">New Recipe</Link>
       </div>
     </div>
   );

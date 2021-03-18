@@ -8,7 +8,7 @@ export default function Card(props) {
   }
 
   return (
-    // <div className="all-cards-body">
+    
 
     <>
       <div className="ind-card">
@@ -31,6 +31,6 @@ export default function Card(props) {
         </h4>
       </div>
     </>
-    // </div>
+    
   );
 }

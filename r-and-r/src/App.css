@@ -8,19 +8,31 @@
   margin-top: 0px;
 }
 
+#l1, #l2, #l3, #l4, #l5, #l6 {
+  text-decoration: none;
+  color: white;
+  background-color: orangered;
+  text-transform: uppercase;
+  border: olivedrab .5px solid;
+}
+
+#l1:hover, #l2:hover, #l3:hover, #l4:hover, #l5:hover, #l6:hover {
+  background-color: olivedrab;
+}
+
 .hidden {
   position: relative;
   text-align: center;
   padding-top: 100px;
   visibility: hidden;
-  text-decoration: none;
+  
 }
 
 .visible {
   position: relative;
   text-align: center;
   padding-top: 100px;
-  text-decoration: none;
+  
 }
 
 .navbar {

@@ -18,7 +18,7 @@ export default function RecipePage(props) {
   return (
     <div className="recipe">
       <Card recipe={specRecipe}/>
-      <p>Instructions: <br/>{instructions}</p>
+      <h4>Instructions: <br/>{instructions}</h4>
     </div>
   )
 }
