@@ -17,8 +17,11 @@ const MenuLabel = styled.label`
   box-shadow: 0 1rem 3rem rgba(182, 237, 200, 0.3);
   text-align: center;
   @media (max-width: 480px) {
-    top: 3rem;
+    top: 7rem;
     right: 8rem;
+    height: 5rem;
+    width: 5rem;
+    margin-right: 15px;
   }
 `;
 
@@ -30,6 +33,12 @@ const Icon = styled.span`
   display: inline-block;
   margin-top: 3.5rem;
   transition: all 0.3s;
+
+  @media (max-width: 480px) {
+      margin-top: 2.5rem;
+      
+  }
+
   &::before,
   &::after {
     content: "";
@@ -49,6 +58,7 @@ const Icon = styled.span`
     top: ${(props) => (props.clicked ? "0" : "0.8rem")};
     transform: ${(props) => (props.clicked ? "rotate(-135deg)" : "rotate(0)")};
   }
+  
 `;
 
 export default function Navbar(props) {

@@ -21,12 +21,12 @@ export default function Card(props) {
             {props.recipe.fields.ingredients}
           </h3>
           <h3 id="description">
-            description: <br />
+            Description: <br />
             {props.recipe.fields.description}
           </h3>
         </div>
         <h4 id="cook-time">
-          cook Time: <br />
+          Cook Time: <br />
           {props.recipe.fields.cookTime}
         </h4>
       </div>
