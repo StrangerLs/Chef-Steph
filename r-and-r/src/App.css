@@ -128,3 +128,11 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 600px) {
+  .ind-card {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}
