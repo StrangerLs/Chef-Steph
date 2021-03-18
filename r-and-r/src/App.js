@@ -25,7 +25,7 @@ function App() {
     <div className="homepage">
         <Navbar />
       <Route exact path="/">
-        <h2>In case youre unsure what to make, heres a random recipe below!</h2>
+        <h2>In case you're unsure what to make, here's a random recipe below!</h2>
       <RandomCard recipes={recipes}/>
       </Route>
       <Route exact path="/recipes">
