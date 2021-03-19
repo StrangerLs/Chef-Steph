@@ -12,14 +12,14 @@ import RecipePage from "./components/RecipePage";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
-
+  const [toggleFetch, setToggleFetch] = useState(false)
   useEffect(() => {
     const getRecipes = async () => {
       const response = await axios.get(baseURL, config);
       setRecipes(response.data.records);
     };
     getRecipes();
-  }, []);
+  }, [toggleFetch]);
   return (
     <div className="homepage">
       <Navbar />
@@ -41,7 +41,7 @@ function App() {
           <RecipePage recipes={recipes} />
         </Route>
         <Route exact path="/form">
-          <Form />
+          <Form setToggleFetch={setToggleFetch}/>
         </Route>
         <Route exact path="/foods/:type">
           <Plates recipes={recipes} />

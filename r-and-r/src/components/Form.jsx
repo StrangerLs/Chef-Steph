@@ -1,9 +1,9 @@
-import axios from 'axios';
-import React from 'react'
+import axios from "axios";
+import React from "react";
 import { useState } from "react";
 import { config, baseURL } from "../services";
 
-export default function Form() {
+export default function Form(props) {
   const [itemName, setItemName] = useState("");
   const [instructions, setInstructions] = useState("");
   const [description, setDescription] = useState("");
@@ -11,9 +11,8 @@ export default function Form() {
   const [cookTime, setCookTime] = useState("");
   const [typesOfDishes, setTypesOfDishes] = useState("");
 
-
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const newDish = {
       itemName,
       instructions,
@@ -21,24 +20,55 @@ export default function Form() {
       ingredients,
       cookTime,
       typesOfDishes,
-    }
+    };
     await axios.post(baseURL, { fields: newDish }, config);
-  }
+    props.setToggleFetch((curr) => !curr);
+  };
   return (
     <div>
       <h1>Add your own recipe here!</h1>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Name" value={itemName} onChange={(e) => setItemName(e.target.value)} />
-        <br/>
-        <input type="text" placeholder="instructions" value={instructions} onChange={(e) => setInstructions(e.target.value)} />
-        <br/>
-        <input type="text" placeholder="description" value={description} onChange={(e) => setDescription(e.target.value)} />
-        <br/>
-        <input type="text" placeholder="ingredients" value={ingredients} onChange={(e) => setIngredients(e.target.value)} />
-        <br/>
-        <input type="text" placeholder="Cook Time" value={cookTime} onChange={(e) => setCookTime(e.target.value)} />
-        <br/>
-        <select required value={typesOfDishes} onChange={(e) => setTypesOfDishes(e.target.value)}>
+        <input
+          type="text"
+          placeholder="Name"
+          value={itemName}
+          onChange={(e) => setItemName(e.target.value)}
+        />
+        <br />
+        <input
+          type="text"
+          placeholder="ingredients"
+          value={ingredients}
+          onChange={(e) => setIngredients(e.target.value)}
+        />
+
+        <br />
+        <input
+          type="text"
+          placeholder="description"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+        />
+        <br />
+        <input
+          type="text"
+          placeholder="instructions"
+          value={instructions}
+          onChange={(e) => setInstructions(e.target.value)}
+        />
+        <br />
+        <input
+          type="text"
+          placeholder="Cook Time"
+          value={cookTime}
+          onChange={(e) => setCookTime(e.target.value)}
+        />
+        <br />
+        <select
+          required
+          value={typesOfDishes}
+          onChange={(e) => setTypesOfDishes(e.target.value)}
+        >
           <option disabled defaultValue></option>
           <option>beverages</option>
           <option>bigPlate</option>
@@ -47,5 +77,5 @@ export default function Form() {
         <button type="submit">add</button>
       </form>
     </div>
-  )
+  );
 }
