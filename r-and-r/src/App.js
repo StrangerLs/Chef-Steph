@@ -1,50 +1,52 @@
 import axios from "axios";
 import CardPage from "./components/CardPage";
-import RandomCard from "./components/RandomCard"
-import Plates from "./components/Plates"
+import RandomCard from "./components/RandomCard";
+import Plates from "./components/Plates";
 import { Route } from "react-router-dom";
 import { baseURL, config } from "./services/index";
 import { useState, useEffect } from "react";
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
 import Form from "./components/Form";
-import './App.css';
+import "./App.css";
 import RecipePage from "./components/RecipePage";
 
-
 function App() {
-  const [recipes, setRecipes] = useState([])
+  const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
     const getRecipes = async () => {
-      const response = await axios.get(baseURL, config)
+      const response = await axios.get(baseURL, config);
       setRecipes(response.data.records);
-    }
+    };
     getRecipes();
-  }, [])
+  }, []);
   return (
     <div className="homepage">
-        <Navbar />
+      <Navbar />
       <Route exact path="/">
-        <h2>In case you're unsure what to make, here's a random recipe below!</h2>
-      <RandomCard recipes={recipes}/>
+        <h2>
+          In case you're unsure what to make, here's a random recipe below!
+        </h2>
+
+        <RandomCard recipes={recipes} />
       </Route>
       <Route exact path="/recipes">
-      <CardPage recipes={recipes}/>
+        <div>
+          <CardPage recipes={recipes} />
+        </div>
       </Route>
-      
-    <div className="App">
-    
+
+      <div className="App">
         <Route exact path="/recipe/:id">
-          <RecipePage recipes={recipes}/>
+          <RecipePage recipes={recipes} />
         </Route>
         <Route exact path="/form">
-       
-          <Form/>
+          <Form />
         </Route>
         <Route exact path="/foods/:type">
-          <Plates recipes={recipes}/>
+          <Plates recipes={recipes} />
         </Route>
-    </div>
+      </div>
     </div>
   );
 }

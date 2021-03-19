@@ -61,7 +61,7 @@ const Icon = styled.span`
   
 `;
 
-export default function Navbar(props) {
+export default function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
