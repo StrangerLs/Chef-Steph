@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: "Shippori Mincho B1", serif;
 }
 
 #RR {
@@ -8,18 +8,27 @@
   margin-top: 0px;
 }
 
-#l1, #l2, #l3, #l4, #l5, #l6 {
+#l1,
+#l2,
+#l3,
+#l4,
+#l5,
+#l6 {
   text-decoration: none;
   color: white;
   background-color: olivedrab;
   text-transform: uppercase;
-  border: white .5px solid;
+  border: white 0.5px solid;
   border-radius: 50px;
   padding: 0.5em 1em;
-  
 }
 
-#l1:hover, #l2:hover, #l3:hover, #l4:hover, #l5:hover, #l6:hover {
+#l1:hover,
+#l2:hover,
+#l3:hover,
+#l4:hover,
+#l5:hover,
+#l6:hover {
   background-color: rgb(235, 174, 121);
 }
 
@@ -28,24 +37,22 @@
   text-align: center;
   padding-top: 100px;
   visibility: hidden;
-  
 }
 
 .visible {
   position: relative;
   text-align: center;
   padding-top: 100px;
-  
 }
 
 .navbar {
   background-color: orange;
 }
 
-.homepage{
+.homepage {
   justify-content: center;
   text-align: center;
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: "Shippori Mincho B1", serif;
 }
 
 #head {
@@ -60,7 +67,7 @@
 
 .card-container {
   display: flex;
-  flex-flow: row wrap; 
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 
@@ -68,12 +75,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .plates {
   display: flex;
-  flex-flow: row wrap; 
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 
@@ -90,7 +96,6 @@
   border-radius: 100px;
   margin: 10px;
   width: 45%;
-  
 }
 
 #name {
@@ -130,9 +135,13 @@
   #head {
     display: flex;
     justify-content: center;
-    
   }
-  #l1, #l2, #l3, #l4, #l5, #l6 {
+  #l1,
+  #l2,
+  #l3,
+  #l4,
+  #l5,
+  #l6 {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -141,13 +150,11 @@
     color: white;
     background-color: olivedrab;
     text-transform: uppercase;
-    border: white .5px solid;
+    border: white 0.5px solid;
     border-radius: 50px;
     padding: 0em 1em;
     width: auto;
   }
-
-
 }
 
 @media (max-width: 600px) {
