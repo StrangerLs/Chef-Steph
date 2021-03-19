@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 // https://dev.to/codebucks/build-hamburger-menu-in-reactjs-using-styled-components-25ln
 const MenuLabel = styled.label`
-  background-color: ${(props) => (props.clicked ? "#b6edc8" : "#d6fde8")};
+  background-color: ${(props) => (props.clicked ? "white" : "gold")};
   transition: all 0.3s;
   position: absolute;
   top: 2rem;
