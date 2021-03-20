@@ -8,8 +8,6 @@ export default function Card(props) {
   }
 
   return (
-    
-
     <>
       <div className="ind-card">
         <Link id="name" to={`/recipe/${props.recipe.id}`}>
@@ -31,6 +29,5 @@ export default function Card(props) {
         </h4>
       </div>
     </>
-    
   );
 }
