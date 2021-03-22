@@ -1,4 +1,5 @@
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 import React from "react";
 import { useState } from "react";
 import { config, baseURL } from "../services";
@@ -10,8 +11,9 @@ export default function Form(props) {
   const [ingredients, setIngredients] = useState("");
   const [cookTime, setCookTime] = useState("");
   const [typesOfDishes, setTypesOfDishes] = useState("");
-
+  const history = useHistory()
   const handleSubmit = async (e) => {
+    
     e.preventDefault();
     const newDish = {
       itemName,
@@ -22,6 +24,7 @@ export default function Form(props) {
       typesOfDishes,
     };
     alert("New Recipe Created!")
+    history.push('/')
     await axios.post(baseURL, { fields: newDish }, config);
     props.setToggleFetch((curr) => !curr);
   };
