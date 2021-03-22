@@ -11,9 +11,8 @@ export default function Form(props) {
   const [ingredients, setIngredients] = useState("");
   const [cookTime, setCookTime] = useState("");
   const [typesOfDishes, setTypesOfDishes] = useState("");
-  const history = useHistory()
+  const history = useHistory();
   const handleSubmit = async (e) => {
-    
     e.preventDefault();
     const newDish = {
       itemName,
@@ -23,8 +22,8 @@ export default function Form(props) {
       cookTime,
       typesOfDishes,
     };
-    alert("New Recipe Created!")
-    history.push('/')
+    alert("New Recipe Created!");
+    history.push("/");
     await axios.post(baseURL, { fields: newDish }, config);
     props.setToggleFetch((curr) => !curr);
   };
