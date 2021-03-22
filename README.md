@@ -59,29 +59,29 @@ Airtable is returning the data for this base as follows:
 
 | Day      | Deliverable                                | Status   |
 | -------- | ------------------------------------------ | -------- |
-| March 15 | Proposal Approval / Airtable Setup         | na |
-| march 16 | Component Creation / Get Data/ Post data   | na |
-| march 17 | Functionality.                             | na |
-| march 18 | MVP.                                       | na |
-| march 19 | CSS                                        | na |
-| march 22  | Presentations                             | na |
+| March 15 | Proposal Approval / Airtable Setup         | complete |
+| march 16 | Component Creation / Get Data/ Post data   | complete |
+| march 17 | Functionality.                             | complete |
+| march 18 | MVP.                                       | complete |
+| march 19 | CSS                                        | complete |
+| march 22  | Presentations                             | complete |
 
 ## Timeframes
 
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal                       |    H     |     .5hrs      |     na      |    na     |
-| Airtable info input            |    H     |     .5hrs      |     na      |    na     |
-| Get and post requests          |    H     |      3hrs      |     na      |    na     |
-| Homepage carousel              |    H     |      4hrs      |     na      |    na     |
-| Creation of card/Nav           |    H     |      7hrs      |     na      |    na     |
-| Card page/populate             |    H     |      8hrs      |     na      |    na     |
-| Homepage CSS                   |    H     |      5hrs      |     na      |    na     |
-| card page CSS                  |    H     |      3hrs      |     na      |    na     |
-| recipe page CSS                |    H     |      3hrs      |     na      |    na     |
-| form CSS                       |    H     |      3hrs      |     na      |    na     |
-| Nav CSS                        |    H     |      3hrs      |     na      |    na     |
-| Total                          |    H     |     40hrs      |     na      |    na     |
+| Proposal                       |    H     |     .5hrs      |     2hrs      |    2hrs     |
+| Airtable info input            |    H     |     .5hrs      |     1hr      |    1hr     |
+| Get and post requests          |    H     |      3hrs      |     3.5hrs      |    3.5hrs     |
+| Homepage carousel              |    L     |      4hrs      |     2hr      |    2hr     |
+| Creation of card/Nav           |    H     |      7hrs      |     5hrs      |    5hrs     |
+| Card page/populate             |    H     |      8hrs      |     4hrs      |    4hrs     |
+| Homepage CSS                   |    H     |      5hrs      |     4hrs      |    4hrs     |
+| card page CSS                  |    H     |      3hrs      |     3hrs      |    3hrs     |
+| recipe page CSS                |    H     |      3hrs      |     3hrs      |    3hrs     |
+| form CSS                       |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Nav CSS                        |    H     |      3hrs      |     4hrs      |    4hrs     |
+| Total                          |    H     |     40hrs      |     33.5hrs      |    33.5hrs     |
 
 
 
