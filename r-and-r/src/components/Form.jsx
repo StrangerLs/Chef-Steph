@@ -21,6 +21,7 @@ export default function Form(props) {
       cookTime,
       typesOfDishes,
     };
+    alert("New Recipe Created!")
     await axios.post(baseURL, { fields: newDish }, config);
     props.setToggleFetch((curr) => !curr);
   };
